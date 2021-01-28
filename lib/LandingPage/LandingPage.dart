@@ -40,16 +40,14 @@ class LandingPage extends StatelessWidget {
          ),
       // for image insertion on landing page
 
-      /*
+
 
       Padding(
         padding: const EdgeInsets.symmetric(vertical: 20.0),
-        child: Image.asset(
-          image link,
+        child: Image.asset("assets/images/home_icon.png",
           width: width,
         ),
       )
-      */
     ];
   }
 
@@ -60,7 +58,7 @@ class LandingPage extends StatelessWidget {
         if (constraints.maxWidth > 1200) {
           return Row(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: pageChildren(constraints.biggest.width),
+            children: pageChildren(constraints.biggest.width/2),
           );
         } else {
           return Column(
